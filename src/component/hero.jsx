@@ -13,7 +13,7 @@ export default function Hero() {
         <button className="w-52 h-16 lg:w-52 lg:h-16 mt-12 bg-primary-green hover:bg-emerald-500 rounded-lg text-white text-xl">Vaccine</button>
       </div>
       <div className="w-full lg:w-1/2 md:h-fit lg:mt-6 flex flex-wrap">
-        <HeroImage className="w-72 h-72 md:w-[450px] md:h-[450px] lg:w-[500px] lg:h-[400px]"/>
+        <HeroImage className=" max-w-full md:w-[450px] md:h-[450px] lg:w-[500px] lg:h-[400px]"/>
       </div>
     </div>
   )
