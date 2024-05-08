@@ -9,10 +9,10 @@ export default function Footer() {
       </div>
       <div className="flex flex-col md:flex-row md:justify-center md:items-center text-white text-sm md:text-xl gap-2 md:gap-5 lg:gap-8">
         <a href="#">Global</a>
-        <a href="#">Indonesia</a>
+        <a href="#indonesia">Indonesia</a>
       </div>
       <div className="flex flex-col md:flex-row md:justify-center md:items-center text-white text-sm md:text-xl gap-2 md:gap-5 lg:gap-8">
-        <a href="#">Provinsi</a>
+        <a href="#provinsi">Provinsi</a>
         <a href="#">About</a>
       </div>
     </div>

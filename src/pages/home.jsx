@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from "../component/header";
 import Hero from "../component/hero";
-import TotalDataIndonesia from "../component/dataIndonesia";
+import Indonesia from "../component/dataIndonesia";
 import Provinsi from "../component/dataProvinsi";
 import DataSubmit from "../component/dataSubmit";
 import Footer from "../component/footer";
@@ -14,8 +14,12 @@ export default function Home() {
     <>
       <Header />
       <Hero />
-      <TotalDataIndonesia />
-      <Provinsi />
+      <div id="indonesia">
+        <Indonesia />
+      </div>
+      <div id="provinsi">
+        <Provinsi />
+      </div>
       <DataSubmit />
       <Footer />
     </>

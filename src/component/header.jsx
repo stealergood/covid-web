@@ -8,8 +8,8 @@ export default function Header() {
         </div>
         <div className="w-1/2 h-full mr-4 flex md:justify-center lg:justify-center items-center md:gap-8 gap-2 text-white md:text-lg lg:text-xl text-xs">
             <a href="#">Global</a>
-            <a href="#">Indonesia</a>
-            <a href="#">Provinsi</a>
+            <a href="#indonesia">Indonesia</a>
+            <a href="#provinsi">Provinsi</a>
             <a href="#">About</a>
         </div>
     </div>
