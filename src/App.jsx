@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
+import Home from './pages/Home/Home';
 import Provinsi from './pages/Provinsi/Provinsi';
 import Indonesia from './pages/Indonesia/Indonesia';
 import About from './pages/About/About';

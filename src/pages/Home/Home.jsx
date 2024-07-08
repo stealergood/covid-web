@@ -1,8 +1,8 @@
-import Header from "../component/Header/Header";
-import Hero from "../component/Hero/Hero";
-import Footer from "../component/Footer/Footer";
-import Situation from "../component/Situation/Situation";
-import SituationByRegions from "../component/SituationByRegions/SituationByRegions";
+import Header from "../../component/Header/Header";
+import Hero from "../../component/Hero/Hero";
+import Footer from "../../component/Footer/Footer";
+import Situation from "../../component/Situation/Situation";
+import SituationByRegions from "../../component/SituationByRegions/SituationByRegions";
 import { useState, useEffect } from "react";
 import axios from "axios";
 
