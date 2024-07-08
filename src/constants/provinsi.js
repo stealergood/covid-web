@@ -1,7 +1,27 @@
 export const DataProvinsi = [
-    { "provinsi": "Aceh", "positif": 0, "sembuh": 0, "dirawat": 0, "meninggal": 0 },
-    { "provinsi": "Bandung", "positif": 0, "sembuh": 0, "dirawat": 0, "meninggal": 0 },
-    { "provinsi": "Depok", "positif": 0, "sembuh": 0, "dirawat": 0, "meninggal": 0 },
-    { "provinsi": "Jakarta", "positif": 0, "sembuh": 0, "dirawat": 0, "meninggal": 0 },
-    { "provinsi": "Medan", "positif": 0, "sembuh": 0, "dirawat": 0, "meninggal": 0 },
+    { "name": "Aceh", 
+        "numbers": {
+            "confirmed": 0, "recovered": 0, "treatment": 0, "death": 0
+        }
+    },
+    { "name": "Bandung", 
+        "numbers": {
+            "confirmed": 0, "recovered": 0, "treatment": 0, "death": 0
+        }
+    },
+    { "name": "Depok", 
+        "numbers": {
+            "confirmed": 0, "recovered": 0, "treatment": 0, "death": 0
+        }
+    },
+    { "name": "Jakarta", 
+        "numbers": {
+            "confirmed": 0, "recovered": 0, "treatment": 0, "death": 0
+        }
+    },
+    { "name": "Medan", 
+        "numbers": {
+            "confirmed": 0, "recovered": 0, "treatment": 0, "death": 0
+        }
+    },
 ]
