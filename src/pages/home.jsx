@@ -12,7 +12,7 @@ export default function Home() {
 
   useEffect(() => {
     const fetchGlobalData = async () => {
-      const response = await axios.get(`${import.meta.env.VITE_API_URL}/api/global.json`)
+      const response = await axios.get('https://covid-fe-2023.vercel.app/api/global.json')
       setGlobalData(response.data.global);
       setRegionsData(response.data.regions);
     }

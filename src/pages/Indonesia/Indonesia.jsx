@@ -13,7 +13,7 @@ export default function Indonesia() {
 
   useEffect(() => {
     const fetchIndonesiaData = async () => {
-      const response = await axios.get(`${import.meta.env.VITE_API_URL}/api/indonesia.json`)
+      const response = await axios.get('https://covid-fe-2023.vercel.app/api/indonesia.json')
       setIndonesiaData(response.data.indonesia);
       setDataProvinsi(response.data.regions);
     }
