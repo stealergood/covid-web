@@ -26,25 +26,32 @@ export default function FormInput() {
     event.preventDefault();
 
     const { name, status, quantity } = formData;
+    const provinsiName = capitalizeFirstLetter(name);
 
-    const index = formDataProvinsi.findIndex((item) => item.provinsi === capitalizeFirstLetter(name));
+    const index = formDataProvinsi.findIndex((item) => item.name === provinsiName);
 
     if (index !== -1) {
       const updatedProvinsiData = formDataProvinsi.map((item, idx) => {
         if (idx === index) {
+          const newNumbers = { ...item.numbers };
           switch (status.toLowerCase()) {
             case 'positif':
-              return { ...item, positif: item.positif + parseInt(quantity) };
+              newNumbers.confirmed += parseInt(quantity);
+              break;
             case 'sembuh':
-              return { ...item, sembuh: item.sembuh + parseInt(quantity) };
+              newNumbers.recovered += parseInt(quantity);
+              break;
             case 'dirawat':
-              return { ...item, dirawat: item.dirawat + parseInt(quantity) };
+              newNumbers.treatment += parseInt(quantity);
+              break;
             case 'meninggal':
-              return { ...item, meninggal: item.meninggal + parseInt(quantity) };
+              newNumbers.death += parseInt(quantity);
+              break;
             default:
               console.log('Status tidak ditemukan:', status);
               return item;
           }
+          return { ...item, numbers: newNumbers };
         }
         return item;
       });
@@ -63,12 +70,12 @@ export default function FormInput() {
   return (
     <StyledForm onSubmit={handleSubmit}>
       <StyledInputGroup>
-        <StyledLabel htmlFor="provinsiInput">Provinsi</StyledLabel>
+        <StyledLabel htmlFor="nameInput">Provinsi</StyledLabel>
         <StyledInput 
-          id="provinsiInput"
+          id="nameInput"
           type="text"
-          name="provinsi"
-          value={formData.provinsi}
+          name="name"
+          value={formData.name}
           onChange={handleChange}
         />
       </StyledInputGroup>
