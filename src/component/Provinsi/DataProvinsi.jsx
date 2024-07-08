@@ -1,4 +1,4 @@
-import DataTable from '../Table/DataTable';
+import DataTable from '../DataTable/DataTable';
 import { StyledContainer, StyledHeader, StyledSubtitle, StyledTableContainer, StyledTitle } from './DataProvinsi.styled';
 
 export default function DataProvinsi(props) {
