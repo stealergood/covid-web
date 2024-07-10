@@ -6,7 +6,7 @@ export default function Footer() {
     <StyledFooterContainer>
       <StyledLeftSection>
         <StyledTitle>COVID ID</StyledTitle>
-        <StyledSubtitle>Developed by aufaroot18</StyledSubtitle>
+        <StyledSubtitle>Developed by TrisnaAtika</StyledSubtitle>
       </StyledLeftSection>
       <StyledLinkSection>
         <StyledLink href="#">Global</StyledLink>
